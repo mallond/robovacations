@@ -1,0 +1,6 @@
+#!/usr/bin/env node
+
+//chomod +x bop
+//cp bop /usr/local/bin/bop
+console.log('Be Bop');
+
