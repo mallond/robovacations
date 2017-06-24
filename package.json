@@ -5,7 +5,8 @@
   "main": "index.js",
   "repository": "git@github.com:StephenGrider/ReduxSimpleStarter.git",
   "scripts": {
-    "start": "node ./node_modules/.bin/webpack-dev-server --hot --open --port 8080"
+    "start": "node ./node_modules/.bin/webpack-dev-server --inline --open --port 8080",
+    "build": "node ./node_modules/.bin/webpack"
   },
   "author": "",
   "license": "ISC",
