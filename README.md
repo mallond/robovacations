@@ -1,7 +1,7 @@
 
 # Robot Vacations - Where robots vacation
 
-![alt text](https://github.com/mallond/react-redux/blob/robovacations/public/images/jude-law-robot-vacation.jpg?raw=true "Jude Law Robot Vacations")
+![alt text](https://raw.githubusercontent.com/mallond/robovacations/master/images/jude-law-robot-vacation.jpg "Jude Law Robot Vacations")
 
 > A playground for testing general React and Redux concept and features, and mostly just to have fun. 
 
