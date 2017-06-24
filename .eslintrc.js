@@ -6,8 +6,8 @@ module.exports = {
     },
     "extends": "eslint:recommended",
     "parserOptions": {
+        "ecmaVersion": 6,
         "ecmaFeatures": {
-            "experimentalObjectRestSpread": true,
             "jsx": true
         },
         "sourceType": "module"
@@ -15,7 +15,9 @@ module.exports = {
     "plugins": [
         "react"
     ],
+    "parser": "babel-eslint",
     "rules": {
+
         "indent": [
             "error",
             2
@@ -32,8 +34,8 @@ module.exports = {
             "error",
             "always"
         ],
-        "ecmaFeatures": {
-            "jsx": true
-        }
+
+      "react/jsx-uses-react": "error",
+      "react/jsx-uses-vars": "error"
     }
 };
