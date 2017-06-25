@@ -26,7 +26,6 @@ class SearchBar extends Component {
   onFormSubmit(event) {
     event.preventDefault();
 
-    console.log('STATE:', this.props);
 
     // We need to go and fetch weather data
     this.props.fetchWeather(this.state.term);
@@ -38,7 +37,6 @@ class SearchBar extends Component {
       {robot:'images/cyborg_girl.jpg'}, {robot:'images/robo-10.png'}];
 
     const rnd = Math.floor(Math.random() * 10);
-    console.log('KJJJJJJJJJJJ',rnd)
     const selectedRobot = robots.robots[rnd];
     robots.robots = [];
     robots.robots.push(selectedRobot);
@@ -74,7 +72,6 @@ function mapDispatchToProps(dispatch) {
 }
 
 function mapStateToProps({robots}) {
-  console.log('map state to props robots:',robots);
   return {robots};
 }
 

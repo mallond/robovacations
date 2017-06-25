@@ -79,7 +79,12 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	var createStoreWithMiddleware = (0, _redux.applyMiddleware)(_reduxPromise2.default)(_redux.createStore);
+	var createStoreWithMiddleware = (0, _redux.applyMiddleware)(_reduxPromise2.default)(_redux.createStore); /**
+	                                                                                                          *  Main Container - Wrapper for all other components
+	                                                                                                          *
+	                                                                                                          *  see webpack.config.js
+	                                                                                                          *
+	                                                                                                          */
 
 	_reactDom2.default.render(_react2.default.createElement(
 	  _reactRedux.Provider,
@@ -23668,17 +23673,18 @@
 	exports.updateRobots = updateRobots;
 	/**
 	 * Created by dm on 6/24/17.
+	 *
+	 * ACTION
+	 *
 	 */
 
 	var UPDATE_ROBOTS = exports.UPDATE_ROBOTS = 'UPDATE_ROBOTS';
 
 	function updateRobots(_payload) {
-	  console.log('action update robots:', _payload);
 
 	  var data = {};
 	  data.data = {};
 	  data.data.robots = _payload.robots;
-	  //data.data.robots = [ ...arr, newEntry ]
 
 	  return {
 	    type: UPDATE_ROBOTS,
@@ -23836,15 +23842,12 @@
 	    value: function onFormSubmit(event) {
 	      event.preventDefault();
 
-	      console.log('STATE:', this.props);
-
 	      // We need to go and fetch weather data
 	      this.props.fetchWeather(this.state.term);
 	      var robots = {};
 	      robots.robots = [{ robot: 'images/to-come.jpg' }, { robot: 'images/future.jpeg' }, { robot: 'images/robot-7.jpg' }, { robot: 'images/cy-mon.jpg' }, { robot: 'images/robo-9.jpg' }, { robot: 'images/robot-6.png' }, { robot: 'images/cy-mon.jpg' }, { robot: 'images/sexyrobots.jpg' }, { robot: 'images/cyborg_girl.jpg' }, { robot: 'images/robo-10.png' }];
 
 	      var rnd = Math.floor(Math.random() * 10);
-	      console.log('KJJJJJJJJJJJ', rnd);
 	      var selectedRobot = robots.robots[rnd];
 	      robots.robots = [];
 	      robots.robots.push(selectedRobot);
@@ -23893,7 +23896,6 @@
 	function mapStateToProps(_ref) {
 	  var robots = _ref.robots;
 
-	  console.log('map state to props robots:', robots);
 	  return { robots: robots };
 	}
 
@@ -23917,7 +23919,13 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	var API_KEY = '6a78596d062df78380eff5944c4e5567';
+	var API_KEY = '6a78596d062df78380eff5944c4e5567'; /**
+	                                                   * Created by dm on 6/24/17.
+	                                                   *
+	                                                   * ACTION
+	                                                   *
+	                                                   */
+
 	var ROOT_URL = 'http://api.openweathermap.org/data/2.5/forecast?appid=' + API_KEY + '&units=imperial';
 
 	var FETCH_WEATHER = exports.FETCH_WEATHER = 'FETCH_WEATHER';
@@ -25011,17 +25019,18 @@
 	exports.updateRobots = updateRobots;
 	/**
 	 * Created by dm on 6/24/17.
+	 *
+	 * ACTION
+	 *
 	 */
 
 	var UPDATE_ROBOTS = exports.UPDATE_ROBOTS = 'UPDATE_ROBOTS';
 
 	function updateRobots(_payload) {
-	  console.log('action update robots:', _payload);
 
 	  var data = {};
 	  data.data = {};
 	  data.data.robots = _payload.robots;
-	  //data.data.robots = [ ...arr, newEntry ]
 
 	  return {
 	    type: UPDATE_ROBOTS,
@@ -38809,13 +38818,13 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	console.log('combined reducer loading');
-
 	var rootReducer = (0, _redux.combineReducers)({
 	  weather: _reducer_weather2.default,
 	  robots: _reducer_updateRobots2.default
 
-	});
+	}); /**
+	     * Combined REDUCER
+	     */
 
 	exports.default = rootReducer;
 
@@ -38842,7 +38851,9 @@
 
 	var _fetchWeather = __webpack_require__(220);
 
-	function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
+	function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } } /**
+	                                                                                                                                                                                                    * REDUCER
+	                                                                                                                                                                                                    */
 
 /***/ }),
 /* 247 */
@@ -38858,11 +38869,9 @@
 	  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
 	  var action = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : '';
 
-
 	  switch (action.type) {
 	    case _updateRobots.UPDATE_ROBOTS:
 	      return [action.payload.data].concat(_toConsumableArray(state));
-	    //return action.payload;
 	  }
 	  return state;
 	};
@@ -38876,8 +38885,8 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } } /**
-	                                                                                                                                                                                                     * Created by dm on 6/24/17.
-	                                                                                                                                                                                                     */
+	                                                                                                                                                                                                    * REDUCER
+	                                                                                                                                                                                                    */
 
 /***/ })
 /******/ ]);
