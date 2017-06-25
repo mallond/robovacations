@@ -21,7 +21,7 @@ class Init extends Component {
   componentDidMount() {
 
     const robots = {};
-    robots.robots = [{robot:1},{robot:2},{robot:3},{robot:4}]
+    robots.robots = [{robot:'images/sexyrobots.jpg'},{robot:'images/sexyrobots1.jpg'},{robot:3},{robot:'images/sexyrobots1.jpg'}]
 
     this.props.loadRobots(robots);
 

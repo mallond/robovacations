@@ -10,13 +10,9 @@ class WeatherList extends Component {
   constructor(props) {
     super(props);
 
-
-
   }
 
   renderWeather(cityData) {
-
-
 
     const name = cityData.city.name;
 
@@ -57,7 +53,7 @@ class WeatherList extends Component {
 }
 
 function mapStateToProps({weather, robots}) {
-  console.log('map state to props robots:',robots)
+  console.log('map state to props robots:',robots);
   return { weather, robots};
 }
 

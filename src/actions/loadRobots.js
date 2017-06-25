@@ -10,7 +10,7 @@ export function loadRobots(_payload) {
 
   const data = {};
   data.data = {};
-  data.data = _payload.robots;
+  data.data.robots = _payload.robots;
   return {
     type: LOAD_ROBOTS,
     payload: data

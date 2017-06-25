@@ -55,4 +55,9 @@ function mapDispatchToProps(dispatch) {
   return bindActionCreators({ fetchWeather}, dispatch);
 }
 
-export default connect(null, mapDispatchToProps)(SearchBar);
+function mapStateToProps({robots}) {
+  console.log('map state to props robots:',robots);
+  return {robots};
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(SearchBar);

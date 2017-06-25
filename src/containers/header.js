@@ -13,6 +13,7 @@ class Header extends Component {
 
   constructor(props) {
     super(props);
+    this.state = {robots:[]};
   }
 
   componentDidMount() {
@@ -21,16 +22,29 @@ class Header extends Component {
 
   render () {
     return (
+
+      //{this.props.weather.map(this.renderWeather)}
       <header className="row">
-          <h3 className="roboFont text-muted"> Robo Vacations </h3>
+          <h3 className="roboFont text-muted"> Robo Vacations   </h3>
           <img className='img-responsive col-md-4 col-md-offset-3' src={'images/sexyrobots.jpg'} ></img>
+          <p>
+            {this.props.robots.map((data)=>{
+              data.robots.map((content)=>{
+                console.log('YAHOO2', content);
+                //this.setState({'robots':[content]})
+              });
+              console.log('YAHOOO',data);})
+
+            }
+          </p>
       </header>
     );
   }
 }
 
 function mapStateToProps({robots}) {
-  console.log('map state to props robots:',robots)
+  console.log('map state to props robots:',robots);
+  //this.props = robots;
   return {robots};
 }
 
