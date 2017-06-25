@@ -21,7 +21,7 @@ class Init extends Component {
   componentDidMount() {
 
     const robots = {};
-    robots.robots = [{robot:'images/sexyrobots.jpg'},{robot:'images/sexyrobots1.jpg'},{robot:3},{robot:'images/sexyrobots1.jpg'}]
+    robots.robots = [{robot:'images/sexyrobots.jpg'},{robot:'images/sexyrobots1.jpgm'},{robot:3},{robot:'images/sexyrobots1.jpg'}]
 
     this.props.updateRobots(robots);
 

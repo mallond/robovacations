@@ -18,7 +18,6 @@ class SearchBar extends Component {
   }
 
 
-
   onInputChange(event) {
 
     this.setState({ term: event.target.value });
@@ -32,7 +31,7 @@ class SearchBar extends Component {
     // We need to go and fetch weather data
     this.props.fetchWeather(this.state.term);
     const robots = {};
-    robots.robots = [{robot:'images/sexyrobotsnnn.jpg'}];
+    robots.robots = [{robot:'images/robot-6.png'}, {robot:'images/robot-7.jpg'}];
     this.props.updateRobots(robots);
     this.setState({ term: '' });
   }

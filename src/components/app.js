@@ -13,7 +13,7 @@ export default class App extends Component {
     return (
       <div>
         <Init/>
-        <Header/>
+        <Header currentRobot="images/sexyrobots.jpg"/>
         <SearchBar />
         <WeatherList />
         <Footer />

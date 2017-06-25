@@ -6,7 +6,7 @@
 export const LOAD_ROBOTS= 'LOAD_ROBOTS';
 
 export function loadRobots(_payload) {
-  console.log('action load robots:', _payload);
+
 
   const data = {};
   data.data = {};
