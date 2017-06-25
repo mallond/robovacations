@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { fetchWeather } from '../actions/fetchWeather';
+import { updateRobots } from '../actions/updateRobots.js';
+
 
 
 
@@ -18,14 +20,20 @@ class SearchBar extends Component {
 
 
   onInputChange(event) {
+
     this.setState({ term: event.target.value });
   }
 
   onFormSubmit(event) {
     event.preventDefault();
 
+    console.log('STATE:', this.props);
+
     // We need to go and fetch weather data
     this.props.fetchWeather(this.state.term);
+    const robots = {};
+    robots.robots = [{robot:'images/sexyrobotsnnn.jpg'}];
+    this.props.updateRobots(robots);
     this.setState({ term: '' });
   }
 
@@ -52,7 +60,7 @@ class SearchBar extends Component {
  dispatch call so they may be invoked directly.
  */
 function mapDispatchToProps(dispatch) {
-  return bindActionCreators({ fetchWeather}, dispatch);
+  return bindActionCreators({ fetchWeather, updateRobots}, dispatch);
 }
 
 function mapStateToProps({robots}) {

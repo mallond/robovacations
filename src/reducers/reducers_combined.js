@@ -1,12 +1,14 @@
 import { combineReducers } from 'redux';
 import WeatherReducer from './reducer_weather';
-import LoadRobots from './reducer_loadRobots.js';
+import Robots from './reducer_updateRobots.js';
+
 
 console.log('combined reducer loading');
 
 const rootReducer = combineReducers({
   weather: WeatherReducer,
-  robots: LoadRobots
+  robots: Robots
+
 });
 
 export default rootReducer;

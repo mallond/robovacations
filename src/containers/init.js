@@ -7,7 +7,7 @@
 import React, { Component} from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import {loadRobots} from '../actions/loadRobots';
+import {updateRobots} from '../actions/UpdateRobots';
 
 
 
@@ -23,7 +23,7 @@ class Init extends Component {
     const robots = {};
     robots.robots = [{robot:'images/sexyrobots.jpg'},{robot:'images/sexyrobots1.jpg'},{robot:3},{robot:'images/sexyrobots1.jpg'}]
 
-    this.props.loadRobots(robots);
+    this.props.updateRobots(robots);
 
   }
 
@@ -35,7 +35,7 @@ class Init extends Component {
 }
 
 function mapDispatchToProps(dispatch) {
-  return bindActionCreators({loadRobots }, dispatch);
+  return bindActionCreators({updateRobots }, dispatch);
 }
 
 export default connect(null, mapDispatchToProps)(Init);
