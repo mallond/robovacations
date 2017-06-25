@@ -3,15 +3,25 @@ import { connect } from 'react-redux';
 import Chart from '../components/chart';
 import GoogleMap from '../components/google_map';
 
+
+
 class WeatherList extends Component {
+
+  constructor(props) {
+    super(props);
+
+
+
+  }
+
   renderWeather(cityData) {
+
+
+
     const name = cityData.city.name;
 
-    var cnt = 0;
     const temps = cityData.list.map((weather) => {
-
       return weather.main.temp_max;
-
     });
     const pressures = cityData.list.map(weather => weather.main.pressure);
     const humidities = cityData.list.map(weather => weather.main.humidity);
@@ -46,8 +56,9 @@ class WeatherList extends Component {
   }
 }
 
-function mapStateToProps({ weather }) {
-  return { weather };
+function mapStateToProps({weather, robots}) {
+  console.log('map state to props robots:',robots)
+  return { weather, robots};
 }
 
 export default connect(mapStateToProps)(WeatherList);

@@ -3,10 +3,21 @@
  */
 
 import React, { Component} from 'react';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+
 
 
 
 class Header extends Component {
+
+  constructor(props) {
+    super(props);
+  }
+
+  componentDidMount() {
+
+  }
 
   render () {
     return (
@@ -18,4 +29,9 @@ class Header extends Component {
   }
 }
 
-export default Header;
+function mapStateToProps({robots}) {
+  console.log('map state to props robots:',robots)
+  return {robots};
+}
+
+export default connect(mapStateToProps)(Header);
