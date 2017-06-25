@@ -164,7 +164,7 @@ or
 
 ```
 
-#Hot to Keep Your Robot Clean - Link to a few diagram:
+#Hot to Keep Your Robot Clean - Link to a few diagrams:
 
 ![alt text](https://raw.githubusercontent.com/mallond/robovacations/master/images/cleanrobot.jpg "keep you robot clean")
 
