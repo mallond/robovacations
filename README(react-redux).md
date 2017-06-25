@@ -3,3 +3,76 @@
 > The whole state of your app is stored in an object tree inside a single store.
 > The only way to change the state tree is to emit an action, an object describing what happened.
 > To specify how the actions transform the state tree, you write pure reducers. Thats it!
+
+## createStore
+
+> Main top Level Store
+> src/index.js 
+
+> Where webpack does its good damage
+```
+  webpack.config.js
+  entry: [
+    './src/index.js'
+  ]
+```
+
+> /src/index.js
+
+>Middleware is the suggested way to extend Redux with custom functionality. 
+>Middleware lets you wrap the store's dispatch method for fun and profit. The key feature of middleware is that it is composable. 
+> Multiple middleware can be combined together, where each middleware requires no knowledge of what comes before or after it in the chain.
+
+```
+
+This is the SEED - Where it all grows 
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
+import { createStore, applyMiddleware } from 'redux';
+import ReduxPromise from 'redux-promise';
+
+import App from './components/app';
+import reducers from './reducers';
+
+const createStoreWithMiddleware = applyMiddleware(ReduxPromise)(createStore);
+
+ReactDOM.render(
+  <Provider store={createStoreWithMiddleware(reducers)}>
+    <App />
+  </Provider>
+  , document.querySelector('.container'));
+
+```
+
+## Components
+
+- Are concerned with how things look.
+- May contain both presentational and container components** inside, and usually have some DOM markup and styles of their own.
+- Often allow containment via this.props.children.
+- Have no dependencies on the rest of the app, such as Flux actions or stores.
+- Don’t specify how the data is loaded or mutated.
+- Receive data and callbacks exclusively via props.
+- Rarely have their own state (when they do, it’s UI state rather than data).
+- Are written as functional components unless they need state, lifecycle hooks, or performance optimizations.
+- Examples: Page, Sidebar, Story, UserInfo, List.
+
+```
+
+This is the main Component ./components
+
+export default class App extends Component {
+  render() {
+    return (
+      <div>
+        <Header/>
+        <SearchBar />
+        <WeatherList />
+        <Footer />
+      </div>
+    );
+  }
+}
+
+```
