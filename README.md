@@ -167,8 +167,7 @@ or
 #Other Notes:
 
 
-
-(React-Redux robovacations road map) [https://github.com/mallond/robovacations/blob/master/README(react-redux).md]
+(React-Redux robovacations road map) [https://github.com/mallond/robovacations/blob/master/react-redux.md]
 
 
 
