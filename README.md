@@ -168,6 +168,7 @@ or
 
 ![alt text](https://raw.githubusercontent.com/mallond/robovacations/master/images/cleanrobot.jpg "keep you robot clean")
 
+####
 (React-Redux robovacations road map) [https://github.com/mallond/robovacations/blob/master/react-redux.md]
 
 
