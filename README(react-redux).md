@@ -133,3 +133,7 @@ Flow
 ```
 export default connect(mapStateToProps)(WeatherList);
 ```
+
+# Connect is so important. It's the Glue of the Machine
+
+![alt text](https://raw.githubusercontent.com/mallond/robovacations/master/images/react_redux_connect.png "Jude Law Robot Vacations")
