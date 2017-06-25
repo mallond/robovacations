@@ -87,3 +87,12 @@ export default class App extends Component {
 - Are usually generated using higher order components such as connect() from React Redux, createContainer() from Relay, or Container.create() from Flux Utils, rather than written by hand.
 - Examples: UserPage, FollowersSidebar, StoryContainer, FollowedUserList.
 
+
+### Search Bar ./containers/search_bar.js
+
+#### Hight Points
+
+- connect (react-redux)
+- bindActionCreators (redux)
+- fetchWeather (actions)
+- 

@@ -1,4 +1,4 @@
-import { FETCH_WEATHER } from '../actions/index';
+import { FETCH_WEATHER } from '../actions/fetchWeather';
 
 
 export default function(state = [], action='') {

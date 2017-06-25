@@ -15,9 +15,9 @@ class Footer extends Component {
     return (
 
       <footer>
-        <p>Posted by: Hege Refsnes</p>
-        <p>Contact information: <a href="mailto:someone@example.com">
-          someone@example.com</a>.</p>
+        <p>Posted by: David Mallon</p>
+        <p>Contact information: <a href="mailto:mallonde@google.com">
+          mallonde@google.com</a>.</p>
       </footer>
 
     );
