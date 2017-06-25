@@ -7,8 +7,6 @@ class WeatherList extends Component {
   renderWeather(cityData) {
     const name = cityData.city.name;
 
-    console.log(JSON.stringify(cityData));
-
     var cnt = 0;
     const temps = cityData.list.map((weather) => {
 
