@@ -3,7 +3,12 @@ import React from 'react';
 import { Sparklines, SparklinesLine, SparklinesReferenceLine } from 'react-sparklines';
 
 function average(data) {
+  console.log(JSON.stringify(data))
   return _.round(_.sum(data)/data.length);
+}
+
+function max(data) {
+  return _.max(data);
 }
 
 export default (props) => {
@@ -14,7 +19,7 @@ export default (props) => {
         <SparklinesLine color={props.color} />
         <SparklinesReferenceLine type="avg" />
       </Sparklines>
-      <div>{average(props.data)} {props.units}</div>
+      <div>{max(props.data)} {props.units}</div>
     </div>
     /*jshint ignore:end */
   );
