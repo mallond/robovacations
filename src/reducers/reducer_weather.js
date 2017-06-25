@@ -1,5 +1,8 @@
-import { FETCH_WEATHER } from '../actions/fetchWeather';
+/**
+* REDUCER
+*/
 
+import { FETCH_WEATHER } from '../actions/fetchWeather';
 
 export default function(state = [], action='') {
   switch (action.type) {

@@ -99,7 +99,25 @@ export default class App extends Component {
 - Examples: UserPage, FollowersSidebar, StoryContainer, FollowedUserList.
 
 
-### Search Bar ./containers/search_bar.js
+### Search Bar ./containers/search_bar
+
+> You can be both a dispatcher and a property getter
+
+```
+
+function mapDispatchToProps(dispatch) {
+  return bindActionCreators({ fetchWeather}, dispatch);
+}
+
+function mapStateToProps({robots}) {
+  console.log('map state to props robots:',robots);
+  return {robots};
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(SearchBar);
+
+
+```
 
 #### High Points
 
@@ -134,25 +152,7 @@ Flow
 export default connect(mapStateToProps)(WeatherList);
 ```
 
-### Search Bar ./containers/search_bar
 
-> You can be both a dispatcher and a property getter
-
-```
-
-function mapDispatchToProps(dispatch) {
-  return bindActionCreators({ fetchWeather}, dispatch);
-}
-
-function mapStateToProps({robots}) {
-  console.log('map state to props robots:',robots);
-  return {robots};
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(SearchBar);
-
-
-```
 # Connect is so important. It's the Glue of the Machine
 
 ![alt text](https://raw.githubusercontent.com/mallond/robovacations/master/images/react_redux_connect.png "Jude Law Robot Vacations")
