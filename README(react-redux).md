@@ -8,7 +8,11 @@
 
 ## createStore
 
+>
+>
 > Main top Level Store
+>
+>
 > src/index.js 
 
 > Where webpack does its good damage
@@ -47,6 +51,11 @@ ReactDOM.render(
   , document.querySelector('.container'));
 
 ```
+
+> redux-promise 
+> How the middleware handles this
+![alt text](https://raw.githubusercontent.com/mallond/robovacations/master/images/redux-promise.jpg "Jude Law Robot Vacations")
+
 
 ## Components
 
@@ -98,6 +107,7 @@ export default class App extends Component {
 - bindActionCreators (redux)
 - fetchWeather (actions)
 
+> Glue this containers state to the connect
 > Marry this component to the mapDispatchToProps
 > bind SearchBar with the FetchWeather Action, and the stores.dispatch
 ```
