@@ -1,5 +1,7 @@
 # React-Redux
 
+(Master Blueprint React-Redux) [http://redux.js.org/docs/basics/UsageWithReact.html]
+
 > The whole state of your app is stored in an object tree inside a single store.
 > The only way to change the state tree is to emit an action, an object describing what happened.
 > To specify how the actions transform the state tree, you write pure reducers. Thats it!
@@ -90,9 +92,34 @@ export default class App extends Component {
 
 ### Search Bar ./containers/search_bar.js
 
-#### Hight Points
+#### High Points
 
 - connect (react-redux)
 - bindActionCreators (redux)
 - fetchWeather (actions)
-- 
+
+> Marry this component to the mapDispatchToProps
+> bind SearchBar with the FetchWeather Action, and the stores.dispatch
+```
+export default connect(null, bindActionCreators({ fetchWeather }, dispatch) )(SearchBar);
+
+```
+
+Flow
+
+```
+> onSubmit={this.onFormSubmit > this.props.fetchWeather(this.state.term) > 
+          
+```
+
+### Weather List ./containers/weather_list.js
+
+#### High Points
+
+- connect (react-redux)
+- bindActionCreators (redux)
+
+> Glue this containers state to the connect 
+```
+export default connect(mapStateToProps)(WeatherList);
+```

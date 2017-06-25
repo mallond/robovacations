@@ -166,35 +166,8 @@ or
 
 #Other Notes:
 
-```
-[major, minor, patch]
-
-~ Range in package.json (patch)
-Allows patch-level changes if a minor version is specified on the comparator. 
-Allows minor-level changes if not.
-
-^ Range in package.json (only minor updates and patches)
-Allows changes that do not modify the left-most non-zero digit 
 
 
-```
-Dev:
-
-npm install --save-dev babel-core babel-loader babel-preset-es2015 css-loader style-loader webpack webpack-dev-server react-hot-loader
-
-Core:
-
-npm install --save react react-dom
 
 
-Create-react-app
-
-```
-> npm install -g create-react-app
-
-> create-react-app my-app
-> cd my-app/
-> npm start
-
-```
 
