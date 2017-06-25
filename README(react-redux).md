@@ -54,7 +54,7 @@ ReactDOM.render(
 
 > redux-promise 
 > How the middleware handles this
-![alt text](https://raw.githubusercontent.com/mallond/robovacations/master/images/redux-promise.jpg "Jude Law Robot Vacations")
+![alt text](https://raw.githubusercontent.com/mallond/robovacations/master/images/redux-promise.jpg {width=60% height=60%}"Jude Law Robot Vacations")
 
 
 ## Components
