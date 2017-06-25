@@ -10,9 +10,10 @@ class Header extends Component {
 
   render () {
     return (
-      <div className="header">
-        <img className='img-fluid' src={'images/sexyrobots.jpg'}></img>
-      </div>
+      <header className="row">
+          <h3 className="roboFont text-muted"> Robo Vacations </h3>
+          <img className='img-responsive col-md-4 col-md-offset-3' src={'images/sexyrobots.jpg'} ></img>
+      </header>
     );
   }
 }
