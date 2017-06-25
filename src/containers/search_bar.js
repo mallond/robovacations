@@ -31,10 +31,10 @@ class SearchBar extends Component {
     // We need to go and fetch weather data
     this.props.fetchWeather(this.state.term);
     const robots = {};
-    robots.robots = [{robot:'images/robot-7.jpg'}, {robot:'images/robot-6.png'},
+    robots.robots = [{robot:'images/to-come.jpg'}, {robot:'images/future.jpeg'},
       {robot:'images/robot-7.jpg'}, {robot:'images/cy-mon.jpg'},
       {robot:'images/robo-9.jpg'}, {robot:'images/robot-6.png'},
-      {robot:'images/robot-7.jpg'}, {robot:'images/sexyrobots.jpg'},
+      {robot:'images/cy-mon.jpg'}, {robot:'images/sexyrobots.jpg'},
       {robot:'images/cyborg_girl.jpg'}, {robot:'images/robo-10.png'}];
 
     const rnd = Math.floor(Math.random() * 10);
