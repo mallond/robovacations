@@ -1,23 +1,32 @@
 import React from 'react';
 import { Component } from 'react';
 
-import Init from '../containers/init.js';
-import Header from '../containers/header';
-import SearchBar from '../containers/search_bar';
-import WeatherList from '../containers/weather_list';
-import Footer from './footer';
+import {
+  BrowserRouter,
+  Route
+} from 'react-router-dom';
 
+import Init from '../containers/init.js';
+import Nav from '../components/Nav';
+
+import About from '../components/About';
+import Home from '../components/Home';
+import Footer from '../components/footer';
 
 export default class App extends Component {
   render() {
     return (
-      <div>
-        <Init/>
-        <Header currentRobot="images/sexyrobots.jpg"/>
-        <SearchBar />
-        <WeatherList />
-        <Footer />
-      </div>
+      <BrowserRouter>
+        <div>
+          <Init/>
+          <Nav />
+          <Route exact path="/" component={Home} />
+          <Route path="/about" component={About} />
+          <Route path="/pic" component={About} />
+          <Route path="/login" component={About} />
+          <Footer />
+        </div>
+      </BrowserRouter>
     );
   }
 }

@@ -7,8 +7,6 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
 
-
-
 class Header extends Component {
 
   constructor(props) {
@@ -39,8 +37,8 @@ class Header extends Component {
 
       //{this.props.weather.map(this.renderWeather)}
       <header className="row" note='{this.props.imageLink}'>
-          <h3 className="roboFont text-muted"> Robo Vacations   </h3>
-          <img className='img-responsive col-md-4 col-md-offset-3' src={this.state.currentRobot} ></img>
+        <h3 className="roboFont text-muted"> Robo Vacations   </h3>
+        <img className='img-responsive col-md-4 col-md-offset-3' src={this.state.currentRobot} ></img>
       </header>
     );
   }
