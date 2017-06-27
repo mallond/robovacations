@@ -6,8 +6,8 @@ const Header = () => (
     <ul className="main-nav">
       <li><NavLink exact to="/">Home</NavLink></li>
       <li><NavLink to="/about">About</NavLink></li>
-      <li><NavLink to="/teachers">Robo Pics</NavLink></li>
-      <li><NavLink to="/courses">Login</NavLink></li>
+      <li><NavLink to="/pics">Robo Pics</NavLink></li>
+      <li><NavLink to="/login">Login</NavLink></li>
     </ul>
   </header>
 );

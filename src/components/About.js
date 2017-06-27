@@ -6,7 +6,7 @@ class About extends Component {
   }
 
   render() {
-    return <div />;
+    return <div>About Add Content Here</div>;
   }
 }
 

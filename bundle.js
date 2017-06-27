@@ -73,7 +73,7 @@
 
 	var _app2 = _interopRequireDefault(_app);
 
-	var _reducers_combined = __webpack_require__(285);
+	var _reducers_combined = __webpack_require__(287);
 
 	var _reducers_combined2 = _interopRequireDefault(_reducers_combined);
 
@@ -23541,6 +23541,14 @@
 
 	var _Home2 = _interopRequireDefault(_Home);
 
+	var _Login = __webpack_require__(285);
+
+	var _Login2 = _interopRequireDefault(_Login);
+
+	var _Pics = __webpack_require__(286);
+
+	var _Pics2 = _interopRequireDefault(_Pics);
+
 	var _footer = __webpack_require__(284);
 
 	var _footer2 = _interopRequireDefault(_footer);
@@ -23573,10 +23581,14 @@
 	          null,
 	          _react2.default.createElement(_init2.default, null),
 	          _react2.default.createElement(_Nav2.default, null),
-	          _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/', component: _Home2.default }),
-	          _react2.default.createElement(_reactRouterDom.Route, { path: '/about', component: _About2.default }),
-	          _react2.default.createElement(_reactRouterDom.Route, { path: '/pic', component: _About2.default }),
-	          _react2.default.createElement(_reactRouterDom.Route, { path: '/login', component: _About2.default }),
+	          _react2.default.createElement(
+	            _reactRouterDom.Switch,
+	            null,
+	            _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/', component: _Home2.default }),
+	            _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/about', component: _About2.default }),
+	            _react2.default.createElement(_reactRouterDom.Route, { path: '/pics', component: _Pics2.default }),
+	            _react2.default.createElement(_reactRouterDom.Route, { path: '/login', component: _Login2.default })
+	          ),
 	          _react2.default.createElement(_footer2.default, null)
 	        )
 	      );
@@ -27081,7 +27093,7 @@
 	        null,
 	        _react2.default.createElement(
 	          _reactRouterDom.NavLink,
-	          { to: '/teachers' },
+	          { to: '/pics' },
 	          'Robo Pics'
 	        )
 	      ),
@@ -27090,7 +27102,7 @@
 	        null,
 	        _react2.default.createElement(
 	          _reactRouterDom.NavLink,
-	          { to: '/courses' },
+	          { to: '/login' },
 	          'Login'
 	        )
 	      )
@@ -27141,7 +27153,11 @@
 	  }, {
 	    key: 'render',
 	    value: function render() {
-	      return _react2.default.createElement('div', null);
+	      return _react2.default.createElement(
+	        'div',
+	        null,
+	        'About Add Content Here'
+	      );
 	    }
 	  }]);
 
@@ -42396,13 +42412,121 @@
 	  value: true
 	});
 
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(2);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Login = function (_Component) {
+	  _inherits(Login, _Component);
+
+	  function Login() {
+	    _classCallCheck(this, Login);
+
+	    return _possibleConstructorReturn(this, (Login.__proto__ || Object.getPrototypeOf(Login)).apply(this, arguments));
+	  }
+
+	  _createClass(Login, [{
+	    key: 'componentDidMount',
+	    value: function componentDidMount() {
+	      console.log('Login');
+	    }
+	  }, {
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        'div',
+	        null,
+	        'Login Add Content Here'
+	      );
+	    }
+	  }]);
+
+	  return Login;
+	}(_react.Component);
+
+	exports.default = Login;
+
+/***/ }),
+/* 286 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(2);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Pics = function (_Component) {
+	  _inherits(Pics, _Component);
+
+	  function Pics() {
+	    _classCallCheck(this, Pics);
+
+	    return _possibleConstructorReturn(this, (Pics.__proto__ || Object.getPrototypeOf(Pics)).apply(this, arguments));
+	  }
+
+	  _createClass(Pics, [{
+	    key: 'componentDidMount',
+	    value: function componentDidMount() {
+	      console.log('Login');
+	    }
+	  }, {
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        'div',
+	        null,
+	        'Pics Add Content Here'
+	      );
+	    }
+	  }]);
+
+	  return Pics;
+	}(_react.Component);
+
+	exports.default = Pics;
+
+/***/ }),
+/* 287 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
 	var _redux = __webpack_require__(175);
 
-	var _reducer_weather = __webpack_require__(286);
+	var _reducer_weather = __webpack_require__(288);
 
 	var _reducer_weather2 = _interopRequireDefault(_reducer_weather);
 
-	var _reducer_updateRobots = __webpack_require__(287);
+	var _reducer_updateRobots = __webpack_require__(289);
 
 	var _reducer_updateRobots2 = _interopRequireDefault(_reducer_updateRobots);
 
@@ -42419,7 +42543,7 @@
 	exports.default = rootReducer;
 
 /***/ }),
-/* 286 */
+/* 288 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -42446,7 +42570,7 @@
 	                                                                                                                                                                                                    */
 
 /***/ }),
-/* 287 */
+/* 289 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
