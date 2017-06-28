@@ -246,7 +246,7 @@ header {
   }
   /* COURSE NAV -------- */
   .course-nav {
-    float: right;
+    float: left;
   }
   .courses h2 {
     float: left;

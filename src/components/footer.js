@@ -14,6 +14,7 @@ class Footer extends Component {
   render () {
     return (
 
+      <div>
       <footer>
         <ol className="wpp-list">
           <li> <a href="http://www.telegraph.co.uk/business/2017/06/25/narcissistic-bosses-biggest-threat-robot-revolution/" title="Why humans must accept that robots make better decisions" clasNames="wpp-post-title" target="_blank">Why humans must accept that robots make better decisions</a> </li>
@@ -26,6 +27,7 @@ class Footer extends Component {
         <p>Contact information: <a href="mailto:mallonde@google.com">
           mallonde@google.com</a>.</p>
       </footer>
+      </div>
 
     );
   }

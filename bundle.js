@@ -73,7 +73,7 @@
 
 	var _app2 = _interopRequireDefault(_app);
 
-	var _reducers_combined = __webpack_require__(287);
+	var _reducers_combined = __webpack_require__(288);
 
 	var _reducers_combined2 = _interopRequireDefault(_reducers_combined);
 
@@ -23553,6 +23553,10 @@
 
 	var _footer2 = _interopRequireDefault(_footer);
 
+	var _NotFound = __webpack_require__(287);
+
+	var _NotFound2 = _interopRequireDefault(_NotFound);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -23587,7 +23591,8 @@
 	            _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/', component: _Home2.default }),
 	            _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/about', component: _About2.default }),
 	            _react2.default.createElement(_reactRouterDom.Route, { path: '/pics', component: _Pics2.default }),
-	            _react2.default.createElement(_reactRouterDom.Route, { path: '/login', component: _Login2.default })
+	            _react2.default.createElement(_reactRouterDom.Route, { path: '/login', component: _Login2.default }),
+	            _react2.default.createElement(_reactRouterDom.Route, { component: _NotFound2.default })
 	          ),
 	          _react2.default.createElement(_footer2.default, null)
 	        )
@@ -27156,7 +27161,46 @@
 	      return _react2.default.createElement(
 	        'div',
 	        null,
-	        'About Add Content Here'
+	        _react2.default.createElement(
+	          'h2',
+	          null,
+	          'About'
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'course-header group' },
+	          _react2.default.createElement(
+	            'ul',
+	            { className: 'course-nav' },
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              _react2.default.createElement(
+	                'a',
+	                { href: 'https://github.com/mallond/robovacations', target: '_blank' },
+	                'Git Build Hints'
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              _react2.default.createElement(
+	                'a',
+	                { href: 'https://github.com/mallond/robovacations/blob/master/react-redux.md', target: '_blank' },
+	                'Git Architecture '
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              _react2.default.createElement(
+	                'a',
+	                { href: 'http://redux.js.org/docs/basics/UsageWithReact.html', target: '_blank' },
+	                'Redux React Usage'
+	              )
+	            )
+	          )
+	        )
 	      );
 	    }
 	  }]);
@@ -42316,82 +42360,86 @@
 	    key: "render",
 	    value: function render() {
 	      return _react2.default.createElement(
-	        "footer",
+	        "div",
 	        null,
 	        _react2.default.createElement(
-	          "ol",
-	          { className: "wpp-list" },
+	          "footer",
+	          null,
 	          _react2.default.createElement(
-	            "li",
-	            null,
-	            " ",
+	            "ol",
+	            { className: "wpp-list" },
 	            _react2.default.createElement(
-	              "a",
-	              { href: "http://www.telegraph.co.uk/business/2017/06/25/narcissistic-bosses-biggest-threat-robot-revolution/", title: "Why humans must accept that robots make better decisions", clasNames: "wpp-post-title", target: "_blank" },
-	              "Why humans must accept that robots make better decisions"
+	              "li",
+	              null,
+	              " ",
+	              _react2.default.createElement(
+	                "a",
+	                { href: "http://www.telegraph.co.uk/business/2017/06/25/narcissistic-bosses-biggest-threat-robot-revolution/", title: "Why humans must accept that robots make better decisions", clasNames: "wpp-post-title", target: "_blank" },
+	                "Why humans must accept that robots make better decisions"
+	              ),
+	              " "
 	            ),
-	            " "
+	            _react2.default.createElement(
+	              "li",
+	              null,
+	              " ",
+	              _react2.default.createElement(
+	                "a",
+	                { href: "https://qz.com/1010828/is-it-unethical-to-design-robots-to-resemble-humans/", title: "Is it unethical to design robots to resemble humans?", className: "wpp-post-title", target: "_blank" },
+	                "Is it unethical to design robots to resemble humans?"
+	              ),
+	              " "
+	            ),
+	            _react2.default.createElement(
+	              "li",
+	              null,
+	              " ",
+	              _react2.default.createElement(
+	                "a",
+	                { href: "http://www.newsobserver.com/news/business/biz-columns-blogs/article156940409.html", title: "Robots with human features may unsettle some people. But they\u2019re coming.", className: "wpp-post-title", target: "__blank" },
+	                "Robots with human features may unsettle some people. But they\u2019re coming."
+	              ),
+	              " "
+	            ),
+	            _react2.default.createElement(
+	              "li",
+	              null,
+	              " ",
+	              _react2.default.createElement(
+	                "a",
+	                { href: "https://www.nbcnews.com/mach/tech/what-rise-sentient-robots-will-mean-human-beings-ncna773146", title: "What the Rise of Sentient Robots Will Mean for Human Beings", className: "wpp-post-title", target: "_blank" },
+	                "What the Rise of Sentient Robots Will Mean for Human Beings"
+	              ),
+	              " "
+	            ),
+	            _react2.default.createElement(
+	              "li",
+	              null,
+	              " ",
+	              _react2.default.createElement(
+	                "a",
+	                { href: "https://www.forbes.com/sites/washingtonbytes/2017/06/13/how-congress-can-beat-back-the-robots/#7f85d5b15570", title: "How Congress Can Beat Back The Robotsa\xA0", className: "wpp-post-title", target: "_blank" },
+	                "How Congress Can Beat Back The Robots\xA0"
+	              ),
+	              " "
+	            )
 	          ),
 	          _react2.default.createElement(
-	            "li",
+	            "p",
 	            null,
-	            " ",
-	            _react2.default.createElement(
-	              "a",
-	              { href: "https://qz.com/1010828/is-it-unethical-to-design-robots-to-resemble-humans/", title: "Is it unethical to design robots to resemble humans?", className: "wpp-post-title", target: "_blank" },
-	              "Is it unethical to design robots to resemble humans?"
-	            ),
-	            " "
+	            "Posted by: David Mallon"
 	          ),
 	          _react2.default.createElement(
-	            "li",
+	            "p",
 	            null,
-	            " ",
+	            "Contact information: ",
 	            _react2.default.createElement(
 	              "a",
-	              { href: "http://www.newsobserver.com/news/business/biz-columns-blogs/article156940409.html", title: "Robots with human features may unsettle some people. But they\u2019re coming.", className: "wpp-post-title", target: "__blank" },
-	              "Robots with human features may unsettle some people. But they\u2019re coming."
+	              { href: "mailto:mallonde@google.com" },
+	              "mallonde@google.com"
 	            ),
-	            " "
-	          ),
-	          _react2.default.createElement(
-	            "li",
-	            null,
-	            " ",
-	            _react2.default.createElement(
-	              "a",
-	              { href: "https://www.nbcnews.com/mach/tech/what-rise-sentient-robots-will-mean-human-beings-ncna773146", title: "What the Rise of Sentient Robots Will Mean for Human Beings", className: "wpp-post-title", target: "_blank" },
-	              "What the Rise of Sentient Robots Will Mean for Human Beings"
-	            ),
-	            " "
-	          ),
-	          _react2.default.createElement(
-	            "li",
-	            null,
-	            " ",
-	            _react2.default.createElement(
-	              "a",
-	              { href: "https://www.forbes.com/sites/washingtonbytes/2017/06/13/how-congress-can-beat-back-the-robots/#7f85d5b15570", title: "How Congress Can Beat Back The Robotsa\xA0", className: "wpp-post-title", target: "_blank" },
-	              "How Congress Can Beat Back The Robots\xA0"
-	            ),
-	            " "
+	            "."
 	          )
-	        ),
-	        _react2.default.createElement(
-	          "p",
-	          null,
-	          "Posted by: David Mallon"
-	        ),
-	        _react2.default.createElement(
-	          "p",
-	          null,
-	          "Contact information: ",
-	          _react2.default.createElement(
-	            "a",
-	            { href: "mailto:mallonde@google.com" },
-	            "mallonde@google.com"
-	          ),
-	          "."
 	        )
 	      );
 	    }
@@ -42514,6 +42562,41 @@
 /* 287 */
 /***/ (function(module, exports, __webpack_require__) {
 
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react = __webpack_require__(2);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var NotFound = function NotFound() {
+	  return _react2.default.createElement(
+	    "div",
+	    { className: "main-content not-found" },
+	    _react2.default.createElement(
+	      "i",
+	      { className: "material-icons icn-error" },
+	      "error_outline"
+	    ),
+	    _react2.default.createElement(
+	      "h2",
+	      null,
+	      "Page Not Found"
+	    )
+	  );
+	};
+
+	exports.default = NotFound;
+
+/***/ }),
+/* 288 */
+/***/ (function(module, exports, __webpack_require__) {
+
 	'use strict';
 
 	Object.defineProperty(exports, "__esModule", {
@@ -42522,11 +42605,11 @@
 
 	var _redux = __webpack_require__(175);
 
-	var _reducer_weather = __webpack_require__(288);
+	var _reducer_weather = __webpack_require__(289);
 
 	var _reducer_weather2 = _interopRequireDefault(_reducer_weather);
 
-	var _reducer_updateRobots = __webpack_require__(289);
+	var _reducer_updateRobots = __webpack_require__(290);
 
 	var _reducer_updateRobots2 = _interopRequireDefault(_reducer_updateRobots);
 
@@ -42543,7 +42626,7 @@
 	exports.default = rootReducer;
 
 /***/ }),
-/* 288 */
+/* 289 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -42570,7 +42653,7 @@
 	                                                                                                                                                                                                    */
 
 /***/ }),
-/* 289 */
+/* 290 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
