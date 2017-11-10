@@ -9,6 +9,8 @@ $ ./psql U rater
 
 ```
 
+[Postgres Tutorial](http://www.postgresqltutorial.com/)
+
 Some Cheats
 
 Most `\d` commands support additional param of `__schema__.name__` and accept wildcards like `*.*`
